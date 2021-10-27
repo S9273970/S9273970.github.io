@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta favicon='Logo/LogoSmall-white.png'>
+        <link rel='shortcut icon' type='image/jpg' href='Logo/LogoSmall-white.png'/>
+        <title>Home - Omniprint</title>
+        <script src='universal_scripts.js'></script>
+        <script src='scripts.js'></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='universal_styles.css'>
+        <link rel='stylesheet' media="screen and (max-width: 710px)" href='small_styles.css'>
+        <link rel='stylesheet' media="screen and (min-width: 710px)" href='styles.css'>
+        <link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/CSSRulePlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/Draggable.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/MotionPathPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>
+        <script src="https://kit.fontawesome.com/bc5829d4be.js" crossorigin="anonymous"></script>
+    </head>
+    <body id='body'>
+        <div class='w3-top'>
+            <div class='w3-bar w3-red w3-card w3-left-align w3-large'>
+              <a class='w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red' href='javascript:void(0);' onclick='myFunction()' title='Toggle Navigation Menu'><i class='fa fa-bars'></i></a>
+              <a href='/' class='w3-bar-item w3-button w3-padding-large w3-white'>Home</a>
+              <a href='/Contact' class='w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white'>Contact</a>
+              <a href='/More' class='w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white'>More</a>
+              <!--<a href='#' class='w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white'>Link 3</a>-->
+              <!--<a href='#' class='w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white'>Link 4</a>-->
+            </div>
+          
+            <!-- Navbar on small screens -->
+            <div id='navDemo' class='w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large'>
+              <a href='/Contact' class='w3-bar-item w3-button w3-padding-large'>Contact</a>
+              <a href='/More' class='w3-bar-item w3-button w3-padding-large'>More</a>
+              <!--<a href='#' class='w3-bar-item w3-button w3-padding-large'>Link 3</a>-->
+              <!--<a href='#' class='w3-bar-item w3-button w3-padding-large'>Link 4</a>-->
+            </div>
+        </div>
+          
+          <!-- Header -->
+          <header class='w3-container w3-red w3-center' style='padding-top: 30px;'>
+            <h1 class='w3-margin w3-jumbo'>❰•••❱</h1>
+            <p class='w3-xxxlarge'>The Omniprint</p>
+            <p class='w3-xxlarge w3-text-dark-grey'>The World's Most Versatile Printer</p>
+          </header>
+          
+          <!-- First Grid -->
+          <div class='w3-row-padding w3-padding-64 w3-container'>
+            <div class='w3-content'>
+              <div class='w3-twothird'>
+                <h1><strong>About The Omniprint</strong></h1>
+                <h2 class='w3-padding-32'>The goal of the Omniprint is to solve all of the problems in 3D printing in one machine. The Omniprint can switch between heads, use different filaments in one print, smooth finishes, and more!</h2>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Second Grid -->
+          <div class='w3-row-padding w3-light-grey w3-container' style='text-align: center; align-items: center;'>
+            <div class='w3-content' style='text-align: center; align-items: center;'>
+              <div>
+                <h1>Features of the Omniprint</h1>
+                <grid id="grid" class="class">
+                  <gridItem>
+                    <h5 class="w3-xlarge">
+                      Head Switching
+                      <br>
+                      <span id='leftIcon' class="fa-stack fa-2x fa-lg" style="font-size: 60px;">
+                        <i class="fas fa-circle fa-stack-2x w3-text-red"></i>
+                        <i class="fas fa-brush fa-stack-1x"></i>
+                      </span>
+                    </h5>
+                    <p class='w3-text-grey w3-large'>The Omniprint can quickly and automatically switch between heads, so you don't have to balance speed and detail.</p>
+                  </gridItem>
+                  <gridItem style="padding-bottom: 300px;">
+                    <h5 class="w3-xlarge">
+                      Filament Switching
+                      <br>
+                      <span id='midIcon' class="fa-stack fa-2x fa-lg" style="font-size: 60px;">
+                        <i class="fas fa-circle fa-stack-2x w3-text-red"></i>
+                        <i class="fas fa-compact-disc fa-stack-1x"></i>
+                      </span>
+                    </h5>
+                    <p class='w3-text-grey w3-large'>The Omniprint's ability to swap heads can be used to easily transition between materials. For example, you could print all of your supports in a water-soluable material for easy removal.</p>
+                  </gridItem>
+                  <gridItem style="padding-bottom: 300px;">
+                    <h5 class="w3-xlarge">
+                      Subtractive Elements
+                      <br>
+                      <span id='rightIcon' class="fa-stack fa-2x fa-lg" style="font-size: 60px;">
+                        <i class="fas fa-circle fa-stack-2x w3-text-red"></i>
+                        <i class="fas fa-pen fa-stack-1x"></i>
+                      </span>
+                    </h5>
+                    <p class='w3-text-grey w3-large'>The Omniprint can use specially designed subtractive elements, such as a sander, router, or drill bit in order to do even more things that most printers cannot.</p>
+                  </gridItem>
+                </grid>
+              </div>
+            </div>
+          </div>
+          
+          <div id='footer' class='w3-container w3-dark-gray w3-center w3-padding-32'>
+              <h1 class='w3-margin w3-xlarge'><x id='quoteBox'>If you have dreams it is your responsibility to make them happen. - Bel Pesce</x></h1>
+          </div>
+    </body>
+
+</html>

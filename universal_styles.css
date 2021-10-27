@@ -1,0 +1,50 @@
+/* Place your CSS styles in this file */
+@font-face {
+    font-family: main;
+    src: url(/2_font.woff);
+}
+
+*:not(.fa):not(.fab):not(.fas) {
+    font-family: main !important;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.w3-dark-gray .w3-dark-grey{
+    color: #fff;
+    background-color: #666666;
+}
+
+.w3-text-dark-gray .w3-text-dark-grey{
+    color: #fff;
+}
+
+.rounded{
+    border-radius: 10px;
+}
+
+body {
+    opacity: -10;
+    transition: opacity .8s;
+}
+.w3-top{
+    opacity: 1;
+    transition: opacity 0s;
+}

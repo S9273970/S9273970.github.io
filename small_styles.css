@@ -1,0 +1,24 @@
+grid {
+    display: grid;
+    grid-template-columns: 1 1 1;
+    text-align: center;
+    justify-content: center;
+}
+.class {
+    text-align: auto;
+}
+#gridSmallScreen {
+    display: grid;
+    grid-template-columns: 1 1 1;
+    text-align: center;
+    justify-content: center;
+}
+gridItem {
+    padding-top: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+}
